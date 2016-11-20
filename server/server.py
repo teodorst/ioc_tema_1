@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask_cors import CORS, cross_origin
 
 
 class HouseMonitoringServer(object):
@@ -18,6 +19,7 @@ if __name__ == "__main__":
 
     app = Flask(__name__)
     serverConfigs = HouseMonitoringServer()
+    CORS(app)
 
     @app.route('/sensors/electricity')
     def sensor_electricity():
@@ -49,6 +51,6 @@ if __name__ == "__main__":
         response = jsonify(response)
         response.status_code = 200
         return response
-    
+
 
     app.run(threaded=True, port=8080)
