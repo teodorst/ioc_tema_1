@@ -19,7 +19,7 @@ module.exports = {
       { test: /\.scss$/, loader: ExtractText.extract('style', 'css?sourceMap!sass') },
       { test: /\.sass$/, loader: ExtractText.extract('style', 'css?sourceMap!sass?indentedSyntax=true') },
       { test: /\.css$/, loader: ExtractText.extract('style', 'css?sourceMap') },
-      { test: /\.(png|jpg|woff2?|ttf|eot|svg)(\?|$)/, loader: 'file' },
+      { test: /\.(png|jpg|woff2?|ttf|eot|svg|gif)(\?|$)/, loader: debug ? 'url' : 'file' },
     ]
   },
   resolve: {

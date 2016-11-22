@@ -1,0 +1,57 @@
+#container-div
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: 220px auto;
+    background-color: #33ccff;
+    background-image: url(../images/house_plans.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.circle-div
+{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #33ccff;
+    border-radius: 100px;
+}
+
+.electricity-circle {
+    background-image: url(../images/electricity.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.temperature-circle {
+    background-image: url(../images/temperature.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gas-circle {
+    background-image: url(../images/gas.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.water-circle {
+    background-image: url(../images/water.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carbon-circle {
+    background-image: url(../images/carbon.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
